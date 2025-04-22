@@ -101,31 +101,83 @@ Develop an AI agent capable of:
    - Use libraries like **BeautifulSoup** and **Requests** to fetch and parse the web page content.
 
 3. **Extracting Key Information**:
-   - Implement techniques to identify important sections such as headings, paragraphs, and images.
+   - Implement techniques to identify important sections such as headings, paragraphs.
 
 4. **Generating Summary**:
    - Use a pre-trained **Summarization Model** (e.g., **T5**, **BART**) to generate a concise summary of the page content.
 
 ### **Code Sample** (Python):
 
-```python
-import requests
+```import requests
 from bs4 import BeautifulSoup
 from transformers import pipeline
 
-# Step 1: Accept URL
-url = input("Enter the URL: ")
+# Step 1: Fetch web content
+def fetch_web_content(url):
+    try:
+        headers = {"User-Agent": "Mozilla/5.0"}
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()  # Raise exception for HTTP errors
+        soup = BeautifulSoup(response.text, 'html.parser')
 
-# Step 2: Fetch Content
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
+        # Extract paragraphs
+        paragraphs = soup.find_all('p')
+        content = ' '.join([p.get_text() for p in paragraphs if p.get_text()])
 
-# Extract text content from paragraphs
-text_content = ' '.join([para.get_text() for para in soup.find_all('p')])
+        # Add headings if too short
+        if len(content) < 1000:
+            headings = soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+            content += ' '.join([h.get_text() for h in headings if h.get_text()])
 
-# Step 3: Summarize Text
-summarizer = pipeline("summarization")
-summary = summarizer(text_content, max_length=150, min_length=30, do_sample=False)
+        return content[:3500]  # Limit to 3500 characters to avoid overloading the model
+    except requests.exceptions.RequestException as e:
+        return f"⚠️ Error fetching content: {e}"
+    except Exception as e:
+        return f"⚠️ Unexpected error: {e}"
 
-# Step 4: Display Summary
-print("Summary:", summary[0]['summary_text'])
+# Step 2: Format summary into sections
+def format_summary(text):
+    # Use summarizer
+    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+    summary = summarizer(text, max_length=600, min_length=300, do_sample=False)[0]['summary_text']
+
+    # Basic structure separation (you can customize this further using NLTK or GPT)
+    intro = summary.split(". ")[0:2]
+    highlights = summary.split(". ")[2:6]
+    insights = summary.split(". ")[6:8]
+    conclusion = summary.split(". ")[8:]
+
+    # Format output
+    return f"""
+📄 Summary:
+
+📝 **Summary of the Article**
+
+📚 **Introduction**
+{' '.join(intro)}.
+
+⚡ **Main Highlights**
+- {highlights[0]}.
+- {highlights[1]}.
+- {highlights[2]}.
+- {highlights[3]}.
+
+💡 **Additional Insights**
+{' '.join(insights)}.
+
+✨ **Conclusion**
+{' '.join(conclusion)}.
+""".strip()
+
+# Step 3: AI Agent Function
+def ai_agent(url):
+    content = fetch_web_content(url)
+    if "⚠️" in content:
+        return content
+    return format_summary(content)
+
+# Main entry
+if __name__ == "__main__":
+    user_url = input("🔗 Enter a URL to summarize: ")
+    result = ai_agent(user_url)
+    print(result)
