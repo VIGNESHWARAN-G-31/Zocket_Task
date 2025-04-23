@@ -54,7 +54,7 @@ Built using Python, BeautifulSoup, and transformer-based summarization models li
 
 1. **Run the script and input a URL when prompted:**
    ```bash
-   python ai_agent_summary.py
+   streamlit run app.py
 
 2. **Example interaction:**
 
