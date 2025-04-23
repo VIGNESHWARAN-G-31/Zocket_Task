@@ -88,9 +88,25 @@ Built using Python, **BeautifulSoup**, **Hugging Face Transformers**, and **BART
 - 📖 Reading tools for busy professionals  
  
 ---
+## 🚀 Usage
+
+1 .**Run the application using Streamlit:**
+
+  ```bash
+  streamlit run app.py
+2. **Example interaction:**
+1. Enter a URL: `https://example.com/news-article`
+2. Wait for the content to be fetched and summarized
+3. Use features:
+   - View summary
+   - Listen to text-to-speech narration
+   - Download summary as PDF
+   - View graphical summary of most common words
+---
  
 ### **SAMPLE OUTPUT**:
 ![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/102a717f-0f72-4ee1-8bb1-29b0511dc984)
+
 ![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/0b33985b-2c35-4222-9936-71521981e3cc)
 
 
