@@ -52,11 +52,13 @@ Built using Python, BeautifulSoup, and transformer-based summarization models li
 ---
 ## 🚀 Usage
 
-**Run the script and input a URL when prompted:**
-```bash
- python ai_agent_summary.py
+1. **Run the script and input a URL when prompted:**
+   ```bash
+   python ai_agent_summary.py
 
-**Example interaction:**
+
+
+
 
 
 
