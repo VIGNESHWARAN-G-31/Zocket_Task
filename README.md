@@ -84,7 +84,8 @@ This agent can be integrated into:
 - 🔎 **Research automation systems**
 
 ### **SAMPLE OUTPUT**:
-![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/ae4f9e7b-114a-465d-bd61-4e9d0546d8d5)
-![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/96eb5e16-435d-4426-a3d3-dea73c27053f)
+![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/cf12b9b3-bf8e-4cf7-8152-503fb7785a9f)
+![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/31271b3d-bf64-4fd7-a91e-88b251453bfe)
+
 
 
