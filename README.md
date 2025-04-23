@@ -54,14 +54,6 @@ Built using Python, **BeautifulSoup**, **Hugging Face Transformers**, and **BART
 3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
-
-## 🚀 Usage 
- 1.**Run the application using Streamlit:**
-   ```bash
-    streamlit run app.py
-
-  
- 
 ---
 
 ## 🚀 Example Interaction
