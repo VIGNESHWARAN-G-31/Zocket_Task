@@ -9,7 +9,7 @@ This intelligent agent can **autonomously analyze and summarize** the content of
 
 AI agents are transforming how we interact with the web. This project showcases how modern AI can be combined with web scraping and Natural Language Processing (NLP) to automate web content summarization.
 
-Built using Python, BeautifulSoup, and transformer-based summarization models like  or **BART**, this agent reads articles and presents a quick summary — perfect for research, productivity, and news tracking.
+Built using Python, BeautifulSoup, and transformer-based summarization models like **BART**, this agent reads articles and presents a quick summary — perfect for research, productivity, and news tracking.
 
 ---
 
@@ -69,7 +69,7 @@ Built using Python, BeautifulSoup, and transformer-based summarization models li
 - 🔗 **Input URL** from the user  
 - 🌐 **Request and parse** web content using `requests` + `BeautifulSoup`  
 - 📄 **Extract** useful paragraphs and headings  
-- 🤖 **Generate a summary** using a pre-trained model like **T5** or **BART**  
+- 🤖 **Generate a summary** using a pre-trained model like   **BART**  
 - 📤 **Display or return** the summary  
 
 ---
