@@ -1,3 +1,4 @@
+
 # 🚀 AI Agent for Web Content Summarization
 
 Welcome to the **AI Agent for Web Content Summarization** project!  
@@ -84,7 +85,9 @@ This agent can be integrated into:
 - 🔎 **Research automation systems**
 
 ### **SAMPLE OUTPUT**:
-![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/f28866c2-eb3e-4d43-a88c-e8deeb30478a)
+![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/102a717f-0f72-4ee1-8bb1-29b0511dc984)
+![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/0b33985b-2c35-4222-9936-71521981e3cc)
+
 
 
 
