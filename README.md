@@ -57,8 +57,11 @@ Built using Python, **BeautifulSoup**, **Hugging Face Transformers**, and **BART
 
 ## 🚀 Usage 
  1.**Run the application using Streamlit:**
-  ```bash
-  streamlit run app.py
+   ```bash
+    streamlit run app.py
+
+  
+ 
 ---
 
 ## 🚀 Example Interaction
