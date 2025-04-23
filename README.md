@@ -62,7 +62,26 @@ Built using Python, BeautifulSoup, and transformer-based summarization models li
   - Generating summary...
   - ✅ Summary:
   - "This article discusses the impact of AI tools on healthcare, highlighting their role in improving diagnosis, treatment suggestions, and patient outcomes..."
+---
+## 🛠️ How It Works
 
+### 🧾 Step-by-Step Process:
+- 🔗 **Input URL** from the user  
+- 🌐 **Request and parse** web content using `requests` + `BeautifulSoup`  
+- 📄 **Extract** useful paragraphs and headings  
+- 🤖 **Generate a summary** using a pre-trained model like **T5** or **BART**  
+- 📤 **Display or return** the summary  
+
+---
+
+## 🌍 Applications
+
+This agent can be integrated into:
+
+- 📰 **News summarization tools**
+- 📚 **EdTech platforms**
+- 📖 **Reading assistants**
+- 🔎 **Research automation systems**
 
 ### **SAMPLE OUTPUT**:
 ![Screenshot 2025-04-23 093524](https://github.com/user-attachments/assets/8f10a12b-b4f6-4f60-bea5-a1b26469559c)
