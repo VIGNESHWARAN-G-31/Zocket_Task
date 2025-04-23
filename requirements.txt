@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+transformers
+streamlit
+google-generativeai
+google-api-core 
+google-auth 
+proto-plus 
+protobuf
