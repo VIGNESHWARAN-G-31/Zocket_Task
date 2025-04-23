@@ -94,7 +94,7 @@ Built using Python, **BeautifulSoup**, **Hugging Face Transformers**, and **BART
 1.**FRONTEND**
  .![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/94aca42b-39fa-45fb-a412-c6bacaa650a6)
 
-2. **SUMMARY**
+2.**SUMMARY**
  ![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/8ccbedbf-2e79-4dd4-929f-40b18c7699a7)
 
 3.**VOICE**
