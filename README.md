@@ -58,10 +58,10 @@ Built using Python, BeautifulSoup, and transformer-based summarization models li
 
 2. **Example interaction:**
 
-  -Enter the URL: https://example.com/article
-  -Generating summary...
-  -✅ Summary:
-  -"This article discusses the impact of AI tools on healthcare, highlighting their role in improving diagnosis, treatment suggestions, and patient outcomes..."
+  - Enter the URL: https://example.com/article
+  - Generating summary...
+  - ✅ Summary:
+  - "This article discusses the impact of AI tools on healthcare, highlighting their role in improving diagnosis, treatment suggestions, and patient outcomes..."
 
 
 ### **SAMPLE OUTPUT**:
