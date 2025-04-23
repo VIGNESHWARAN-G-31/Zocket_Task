@@ -91,10 +91,17 @@ Built using Python, **BeautifulSoup**, **Hugging Face Transformers**, and **BART
 
 ### **SAMPLE OUTPUT**:
 
+1.**FRONTEND**
+ .![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/94aca42b-39fa-45fb-a412-c6bacaa650a6)
 
-1 .![Screenshot 2025-04-23 185115](https://github.com/user-attachments/assets/94aca42b-39fa-45fb-a412-c6bacaa650a6)
+2. **SUMMARY**
+ ![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/8ccbedbf-2e79-4dd4-929f-40b18c7699a7)
 
-2. ![Screenshot 2025-04-23 185135](https://github.com/user-attachments/assets/8ccbedbf-2e79-4dd4-929f-40b18c7699a7)
+3.**VOICE**
+![Screenshot 2025-04-23 194236](https://github.com/user-attachments/assets/4f5d86d1-a62b-43a9-b739-431f769db49e)
+
+4.**GRAPH**
+![Screenshot 2025-04-23 194346](https://github.com/user-attachments/assets/52facc72-83fe-42e3-8712-f3e42d611e6a)
 
 
 
