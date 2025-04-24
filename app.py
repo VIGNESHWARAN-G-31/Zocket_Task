@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 from collections import Counter
 import re
 
-# Set page config
+
 st.set_page_config(page_title="Smart Summarizer", layout="wide")
 
-# Session state for summary
+
 if "formatted_summary" not in st.session_state:
     st.session_state.formatted_summary = ""
 
-# Custom CSS
+
 st.markdown("""
     <style>
     body, .stApp {
@@ -52,10 +52,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Title
+
 st.markdown('<div class="main-title">🌐 Web Content Summarizer</div>', unsafe_allow_html=True)
 
-# Feature Buttons
+
 feature_col1, feature_col2, feature_col3, feature_col4, feature_col5 = st.columns(5)
 with feature_col1:
     summary_button = st.button("Summary")
@@ -68,7 +68,7 @@ with feature_col4:
 with feature_col5:
     graphical_button = st.button("Graphical Summary")
 
-# URL input
+
 url_input = st.text_input("🔗 Enter a URL to summarize:")
 
 if url_input:
