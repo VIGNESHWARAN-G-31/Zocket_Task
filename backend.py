@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from transformers import pipeline
 from keybert import KeyBERT
 
-# Fetch content from URL
+
 def fetch_web_content(url):
     try:
         headers = {"User-Agent": "Mozilla/5.0"}
@@ -21,13 +21,13 @@ def fetch_web_content(url):
     except Exception as e:
         return f"⚠️ Error fetching content: {e}"
 
-# Hugging Face summarizer
+# Calling Model From HuggingFace(Bart Model)
 def summarize_with_hf(text, model_name="sshleifer/distilbart-cnn-12-6"):
     summarizer = pipeline("summarization", model=model_name)
     summary = summarizer(text, max_length=5, min_length=200, do_sample=False)
     return summary[0]["summary_text"]
 
-# Format summary into sections
+#This fucntion for generating Summary
 def format_summary(summary):
     split_summary = summary.split(". ")
     intro = split_summary[:2]
@@ -55,7 +55,7 @@ def format_summary(summary):
 {" ".join(conclusion)}
 """
 
-# Extract keywords
+# this fucntion for keywords feature
 def extract_keywords(text, num_keywords=10):
     kw_model = KeyBERT()
     keywords = kw_model.extract_keywords(text, top_n=num_keywords, stop_words='english')
